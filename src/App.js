@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Producto from './components/Producto';
+import Carrito from './components/Carrito'
 
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
           guardarCarrito={guardarCarrito}
           />
       ))}
+      <Carrito 
+      carrito={carrito}
+      guardarCarrito={guardarCarrito}
+      />
       <Footer/>
 
     </Fragment>
